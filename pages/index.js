@@ -16,14 +16,13 @@ const closeModal = (modal) => {
   modal.classList.remove("popup_visible");
 };
 
-// The logic in this function should all be handled in the Todo class.
 const generateTodo = (data) => {
   const todo = new Todo(data, "#todo-template");
   const todoElement = todo.getView();
   return todoElement;
 };
 
-// To be removed normally (Saving for future reference!)
+// To be removed NORMALLY (Saving for future reference, study and greater understanding)
 // const todoElement = todoTemplate.content
 //   .querySelector(".todo")
 //   .cloneNode(true);
