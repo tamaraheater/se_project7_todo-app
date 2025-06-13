@@ -1,17 +1,13 @@
 # To Do Daily
 
-Give a brief description of the project here. Feel free to give it a different name.
+To Do Daily is a simple ToDo List for Daily task management.
 
 ## Functionality
 
-Give a more detailed explanation of the project and its functionality.
+The Project focuses on form functonality using object oriented programming along with JavaScript mode.
 
 ## Technology
 
-Give a description of the technologies and techniques used. Pictures, GIFs, or screenshots that detail the project features are recommended.
+This project employed HTML, CSS, JavaScript, and OOP in building the application and is deployed on GitHub Pages:
 
-## Deployment
-
-This project is deployed on GitHub Pages:
-
-- ADD LINK HERE
+https://tamaraheater.github.io/se_project7_todo-app/
