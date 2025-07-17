@@ -25,10 +25,6 @@ const renderTodo = (item) => {
 const section = new Section({
   items: initialTodos,
   renderer: renderTodo,
-  // Generate todo item
-  // add it todolist
-  // refer to for each loop in THIS file below
-
   containerSelector: ".todos__list",
 });
 
@@ -64,10 +60,6 @@ addTodoForm.addEventListener("submit", (evt) => {
   closeModal(addTodoPopup);
   formValidator.resetValidation();
 });
-
-// initialTodos.forEach((item) => {
-//  renderTodo(item);
-//  });
 
 const formValidator = new FormValidator(validationConfig, addTodoForm);
 formValidator.enableValidation();
