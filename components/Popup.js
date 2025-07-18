@@ -4,7 +4,7 @@ class Popup {
   }
 
   open() {
-    this._popupElement.modal.classList.add("popup_visible");
+    this._popupElement.classList.add("popup_visible");
   }
 }
 
