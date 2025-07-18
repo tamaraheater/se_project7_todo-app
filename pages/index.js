@@ -12,6 +12,11 @@ const addTodoForm = document.forms["add-todo-form"];
 const addTodoCloseBtn = addTodoPopupElement.querySelector(".popup__close");
 const todosList = document.querySelector(".todos__list");
 
+const addTodoPopup = new PopupwithForm({
+  popupSelector: "#add-todo-popup",
+  handleFormSubmit: () => {},
+});
+
 const generateTodo = (data) => {
   const todo = new Todo(data, "#todo-template");
   const todoElement = todo.getView();
