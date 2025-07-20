@@ -17,6 +17,8 @@ const addTodoPopup = new PopupWithForm({
   handleFormSubmit: () => {},
 });
 
+addTodoPopup.setEventListeners();
+
 const generateTodo = (data) => {
   const todo = new Todo(data, "#todo-template");
   const todoElement = todo.getView();
@@ -36,20 +38,8 @@ const section = new Section({
 
 section.renderItems();
 
-//const openModal = (modal) => {
-//  modal.classList.add("popup_visible");
-//};
-
-const closeModal = (modal) => {
-  modal.classList.remove("popup_visible");
-};
-
 addTodoButton.addEventListener("click", () => {
   addTodoPopup.open();
-});
-
-addTodoCloseBtn.addEventListener("click", () => {
-  closeModal(addTodoPopupElement);
 });
 
 addTodoForm.addEventListener("submit", (evt) => {
