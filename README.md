@@ -4,7 +4,7 @@ To Do Daily is a simple ToDo List for Daily task management.
 
 ## Functionality
 
-The Project focuses on form functonality using object oriented programming along with JavaScript mode.
+The Project focuses on form functonality using object oriented programming along with JavaScript class modes.
 
 ## Technology
 
