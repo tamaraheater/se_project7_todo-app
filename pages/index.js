@@ -17,9 +17,10 @@ const todoCounter = new TodoCounter(initialTodos, ".counter__text");
 
 const addTodoPopup = new PopupWithForm({
   popupSelector: "#add-todo-popup",
-  handleFormSubmit: (evt) => {
-    const name = evt.target.name.value;
-    const dateInput = evt.target.date.value;
+  handleFormSubmit: (inputValues) => {
+    console.log(inputValues);
+    const name = inputValues.name;
+    const dateInput = inputValues.date;
     const date = new Date(dateInput);
     date.setMinutes(date.getMinutes() + date.getTimezoneOffset());
 
@@ -27,7 +28,7 @@ const addTodoPopup = new PopupWithForm({
 
     const values = { name, date, id };
     renderTodo(values);
-    closeModal(addTodoPopupElement);
+    addTodoPopup.close();
     formValidator.resetValidation();
   },
 });
