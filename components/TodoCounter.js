@@ -3,7 +3,7 @@ class TodoCounter {
   // selector is the selector for the counter text element
   constructor(todos, selector) {
     this._element = document.querySelector(selector);
-    this._completed = 0;
+    this._element.textContent = `Showing ${this._completed} out of ${this._total} completed`;
     this._total = todos.length;
     this._completed = todos.filter((todo) => todo.completed).length;
     this._updateText();
@@ -28,8 +28,6 @@ class TodoCounter {
   };
 
   _updateText() {
-    // Sets the text content of corresponding text element.
-    // Call this in the constructor, and whenever the counts get updated.
     this._element.textContent = `Showing ${this._completed} out of ${this._total} completed`;
   }
 }
