@@ -4,7 +4,7 @@ class Popup {
     this._popupCloseBtn = this._popupElement.querySelector(".popup__close");
   }
 
-  handleEscapeClose = (evt) => {
+  _handleEscapeClose = (evt) => {
     if (evt.key === "Escape") {
       this.close();
     }
@@ -12,12 +12,12 @@ class Popup {
 
   open() {
     this._popupElement.classList.add("popup_visible");
-    document.addEventListener("keydown", this.handleEscapeClose);
+    document.addEventListener("keydown", this._handleEscapeClose);
   }
 
   close() {
     this._popupElement.classList.remove("popup_visible");
-    document.removeEventListener("keydown", this.handleEscapeClose);
+    document.removeEventListener("keydown", this._handleEscapeClose);
   }
 
   setEventListeners() {
